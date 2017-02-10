@@ -57,5 +57,10 @@ module.exports = function(sequelize, DataTypes) {
         notEmpty: true
       }
     }
+    isAdmin: {
+      type: DataTypes.BOOLEAN,
+      allowNull:false,
+      defaultValue: false
+    }
   }
 }

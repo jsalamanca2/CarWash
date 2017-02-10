@@ -9,10 +9,8 @@ CREATE TABLE `carwash_db`.`users` (
   `email` VARCHAR(45) NOT NULL,
   `firstName` VARCHAR(45) NOT NULL,
   `lastName` VARCHAR(45) NOT NULL,
-  PRIMARY KEY (`id`),
-  UNIQUE INDEX `username_UNIQUE` (`username` ASC),
-  UNIQUE INDEX `password_UNIQUE` (`password` ASC),
-  UNIQUE INDEX `email_UNIQUE` (`email` ASC));
+  `isAdmin` TINYINT(1) NOT NULL,
+  PRIMARY KEY (`id`));
 
 CREATE TABLE `carwash_db`.`services` (
   `id` INT NOT NULL AUTO_INCREMENT,
