@@ -25,14 +25,11 @@ module.exports = function(sequelize, DataTypes) {
           if(value < 8 || value > 16 ) {
             throw new Error('The password must have a minimum of 8 and maximum of 16 characters!')
           }
-          if(value.search(/[a-z]/) < 0) {
-            throw new Error('The password must have a minimum of one LOWERCASE letter in it!')
-          }
           if(value.search(/[A-Z]/) < 0) {
             throw new Error('The password must have a minimum of one UPPERCASE letter in it!')
           }
           if(value.search(/[0-9]/) < 0) {
-            throw new Error('The password must have a minimum of one UPPERCASE letter in it!')
+            throw new Error('The password must have a minimum of one number in it!')
           }
         }
       }
