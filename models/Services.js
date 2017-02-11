@@ -4,8 +4,8 @@ module.exports = function(sequelize, DataTypes) {
     	type: DataTypes.INTEGER,
     	allowNull: false,
     	autoIncrement: true,
-    	primaryKey: true,
-    }
+    	primaryKey: true
+    },
     serviceName: {
     	type: DataTypes.STRING,
     	allowNull: false,
@@ -13,7 +13,7 @@ module.exports = function(sequelize, DataTypes) {
     		isAlpha: true,
     		isEmpty: false
     	}
-    }
+    },
     price: {
     	type: DataTypes.DECIMAL(4, 2),
     	allowNull: false,
@@ -21,7 +21,7 @@ module.exports = function(sequelize, DataTypes) {
     		isNumeric: true,
     		isEmpty: false
     	}
-    }
+    },
     serviceCode: {
     	type: DataTypes.INTEGER,
     	allowNull: false,
@@ -30,5 +30,5 @@ module.exports = function(sequelize, DataTypes) {
     		isEmpty:false
     	}
     }
-  }
-}
+  });
+};
