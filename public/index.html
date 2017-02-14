@@ -1,87 +1,200 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>My App</title>
+
+    <title>Car Wash App</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- linking to css -->
+    <link rel="stylesheet" href="./css/carwash.css">
     <link rel="stylesheet" href="./css/app.min.css">
-    <style>
-      /* TODO */
-    </style>
   </head>
 
   <body>
+  <!-- Main page or introduction screen  -->
     <div class="app-page" data-page="home">
       <div class="app-topbar">
-        <div class="app-title">Home</div>
+        <div class="app-title">Car Wash!!!!</div>
       </div>
       <div class="app-content">
         <div class="app-section">
-          <img src="http://placehold.it/350x150" width="327">
-          <div class="app-button blue app-submit" data-target="page2">Lets Get Cleaning</div>
+          <div>
+            <!-- add code here for the page  -->
+            <img src="http://placehold.it/350x150">
+          </div>
+          <br>
+            <div>
+            <!-- add code here for the page  -->
+            <img src="http://placehold.it/350x150">
+          </div>
+          <br>
+          <div>
+            <!-- add code here for the page  -->
+            <img src="http://placehold.it/350x150">
+          </div>
         </div>
+          <button type="button" class=" app-button btn btn-primary btn-lg btn-block" data-target="page2">Enter</button>
       </div>
     </div>
-    
+    <!--  -->
     <div class="app-page" data-page="page2">
       <div class="app-topbar">
         <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Car Info</div>
+        <div class="app-title">Cars</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <h3>Enter Car Information</h3>
+        </div>
+        <div class="app-section">
+          <div>
+            <!-- dummy Data -->
+            <form>
+                Year:<br>
+                <input type="text" name="Year"><br>
+                Make:<br>
+                <input type="text" name="Make"></br>
+                Model:<br>
+                <input type="text" name="Model"><br>
+                Color:<br>
+                <input type="text" name="Color">
+            </form>
+          </div>
+        </div>
+           <button type="button" class=" app-button btn btn-primary btn-lg btn-block" data-target="page3">Submit</button>
+      </div>
+    </div>
+    <!-- page 3 -->
+    <div class="app-page" data-page="page3">
+      <div class="app-topbar">
+      <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Your Garage</div>
+      </div>
+      <!-- this could be pouplated using a Ajax call to the data base or store the cars using local storage  -->
+      <div class="app-content">
+        <div class="app-section">
+          <button class="btn btn-default glyphicon glyphicon-plus" type="submit" ></button>
+        </div>
+        <div class="app-section">
+        <!-- button that should add cars / redirect the user to the add car screen  -->
+          <button class="btn btn-default glyphicon glyphicon-plus" type="submit" ></button>
+        </div>
+        <div class="app-section">
+        <!-- button that should add cars / redirect the user to the add car screen  -->
+          <button class="btn btn-default glyphicon glyphicon-plus" type="submit" ></button>
+
+        </div>
+        <button type="button" class=" app-button btn btn-primary btn-lg btn-block" data-target="page4">Select Services</button>
+      </div>
+    </div>
+    <!-- page 4 the services page  -->
+    <!-- Services are coming from the backend or server Questionable  -->
+    <div class="app-page" data-page="page4">
+      <div class="app-topbar">
+      <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Services</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <div>
+            <li>wash</li>
+            <li>wax</li>
+            <li>windows</li>
+            <li>tires</li>
+            <li>interior Clean</li>
+          </div>
+        </div>
+        <div class="app-section">
+          <div>
+            <li>wash</li>
+            <li>wax</li>
+            <li>windows</li>
+            <li>tires</li>
+            <li>interior Clean</li>
+          </div>
+        </div>
+          <button type="button" class=" app-button btn btn-primary btn-lg btn-block" data-target="page5">Submit</button>
+      </div>
+    </div>
+    <!-- page 5  or login page -->
+    <div class="app-page" data-page="page5">
+      <div class="app-topbar">
+      <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page5</div>
       </div>
       <div class="app-content">
         <div class="app-section">
 
-        <!--..............THIS IS ADDED FOR THE CAR INFO INPUTS..................-->
-
-
-          <form class="app-section">
-            <input class="app-input" name="carMake" placeholder="Make">
-            <input class="app-input" name="carModel" placeholder="Model">
-            <input class="app-input" name="carColor" placeholder="Color">
-            <input class="app-input" name="carYear" placeholder="Year">
-            <div class="app-button blue app-submit" data-target="page3">Submit</div>
-          </form>
-
-        <!--^^^^^^^^^^.............CAR INFO INPUTSS^^^^^^..........-->
-
-
+          </div>
+        <div class="app-section">
+          <div class="app-button" data-target="page6">Go to Page 6</div>
         </div>
       </div>
-     
-
-    <div class="app-page" data-page="page3">
+    </div>
+    <!-- page 6 -->
+    <div class="app-page" data-page="page6">
       <div class="app-topbar">
-        <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Services</div>
+      <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page6</div>
       </div>
-
-
-
-     <div class="app-content">   
+      <div class="app-content">
         <div class="app-section">
-          <ul class="app-list">
-            <li class="app-button">Ultimate Wash</li>
-          </ul>
-          
-          
+          <div class="app-button" data-target="page7">Go to Page 7</div>
+        </div>
       </div>
-
-      <div class="app-section">
-          <ul class="app-list">
-            <li class="app-button">Shine Wash</li>
-          </ul>
-          
-          
+    </div>
+    <!-- page 7 -->
+    <div class="app-page" data-page="page7">
+      <div class="app-topbar">
+      <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page7</div>
       </div>
-
-      <div class="app-section">
-          <ul class="app-list">
-            <li class="app-button">Standard Wash</li>
-          </ul>
-          
-          
+      <div class="app-content">
+        <div class="app-section">
+          <div class="app-button" data-target="page8">Go to Page 8</div>
+        </div>
       </div>
-
-     
+    </div>
+    <!-- page 8 -->
+    <div class="app-page" data-page="page8">
+      <div class="app-topbar">
+      <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page8</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <div class="app-button" data-target="page9">Go to Page 9</div>
+        </div>
+      </div>
+    </div>
+    <!-- page 9 -->
+    <div class="app-page" data-page="page9">
+      <div class="app-topbar">
+      <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page9</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <div class="app-button" data-target="page10">Go to Page 10</div>
+        </div>
+      </div>
+    </div>
+    <!-- page 10 -->
+    <div class="app-page" data-page="page10">
+      <div class="app-topbar">
+      <div class="app-button left" data-back data-autotitle></div>
+        <div class="app-title">Page10</div>
+      </div>
+      <div class="app-content">
+        <div class="app-section">
+          <div class="app-button" data-target="page11">Go to Page 11</div>
+        </div>
+      </div>
     </div>
 
     <script src="./js/zepto.js"></script>
@@ -91,7 +204,13 @@
         // put stuff here
       });
 
-      App.controller('page2', function (page) {
+      App.controller('page3', function (page) {
+        // put stuff here
+      });
+      App.controller('page4', function (page) {
+        // put stuff here
+      });
+      App.controller('page5', function (page) {
         // put stuff here
       });
 
