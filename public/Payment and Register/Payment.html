@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/carwash.css">
+</head>
+<body>
+
+<div data-role="payment">
+  <div data-role="main" class="ui-content">
+    <form method="post" action="demoform.asp">
+      <label for="cardNumber">Card Number:</label>
+      	<input type="number" name="cardNumber" id="cardNumber">
+      <label for="nameCard">Name on Card:</label>
+      	<input type="text" name="nameCard" id="nameCard">
+        <label for="address">Address:</label>
+      	 <input type="address" name="address" id="address"> 
+      
+        <label for="city" data-inline="true">City:</label>
+          <input type="address" name="city" id="city"> 
+        <label for="state">State:</label>
+          <input type="address" name="state" id="state"> 
+        <label for="zip">Zip:</label>
+          <input type="address" name="zip" data-mini="true" id="zip"> 
+      	<fieldset data-role="controlgroup" data-type="horizontal">
+          <legend>Expiration Date</legend>
+            <label for="expiry-month">Month</label>
+            <select name="expiry-month" id="expiry-month">
+             <option value="01">Jan (01)</option>
+                <option value="02">Feb (02)</option>
+                <option value="03">Mar (03)</option>
+                <option value="04">Apr (04)</option>
+                <option value="05">May (05)</option>
+                <option value="06">Jun (06)</option>
+                <option value="07">Jul (07)</option>
+                <option value="08">Aug (08)</option>
+                <option value="09">Sep (09)</option>
+                <option value="10">Oct (10)</option>
+                <option value="11">Nov (11)</option>
+                <option value="12">Dec (12)</option>
+              </select>
+
+            <label for="expiry-year">Year</label>
+            <select name="expiry-year" id="expiry-year">
+              	<option value="17">2017</option>
+                <option value="18">2018</option>
+                <option value="19">2019</option>
+                <option value="20">2020</option>
+                <option value="21">2021</option>
+                <option value="22">2022</option>
+                <option value="23">2023</option>
+                <option value="24">2024</option>
+                <option value="25">2025</option>
+                <option value="26">2026</option>
+                <option value="27">2027</option>
+              </select>
+             <label for="card">Select Card</label>
+		        <select name="card" id="card">
+		          <option value="visa">Visa</option>
+		          <option value="master">MasterCard</option>
+		          <option value="american">American Express</option>
+		          <option value="discover">Discover</option>
+		        </select>
+		        <br>
+		        
+        </fieldset>	
+
+        <label for="ccv">Card CCV:</label>
+      	<input type="text" name="cvv" id="cvv" data-mini="true">
+      	<!-- button for payment-->
+      <input type="submit" value="Confirm Payment" data-icon="check" data-iconpos="right" data-inline="true">
+    </form>
+  </div>
+</div>
+
+</body>
+</html>
+	
+
+

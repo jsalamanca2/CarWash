@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- linking to css -->
+    <link rel="stylesheet" type="text/css" href="./css/carwash.css">
+  </head>
+  <body>
+      <div data-role="register">
+        <div data-role="header">
+          <h1>Register</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <form method="post" action="demoform.asp">
+              <div class="ui-field-contain">
+                <label for="firstName">First name:</label>
+                <input type="text" name="firstName" id="firstName" placeholder="Ling's">
+                <label for="lastName">Last name:</label>
+                <input type="text" name="LastName" id="LastName" placeholder="Cars">
+                <label for="password">Create Password:</label>
+                <input type="password" name="password" id="password" placeholder="Password">
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Your email..">
+              </div>
+                <input type="submit" data-inline="true" class="submit" value="Submit">
+
+                <input type="reset" data-inline="true" class="reset" value="Reset">
+              </div>
+
+            </form>
+        </div>
+      </div>
+     
+
+  </body>
+</html>
+
+
