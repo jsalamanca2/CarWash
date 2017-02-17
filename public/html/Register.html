@@ -14,16 +14,16 @@
     <!-- Include the jQuery Mobile library -->
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <!-- linking to css -->
-    <link rel="stylesheet" type="text/css" href="./css/carwash.css">
+    <link rel="stylesheet" type="text/css" href="../css/carwash.css">
   </head>
   <body>
-      <div data-role="register">
-        <div data-role="header">
+      <div data-role="register" data-theme="b">
+        <div data-role="header" data-theme="b">
           <h1>Register</h1>
         </div>
-        <div data-role="main" class="ui-content">
+        <div data-role="main" class="ui-content" data-theme="b">
             <form method="post" action="demoform.asp">
-              <div class="ui-field-contain">
+              <div class="ui-field-contain" data-theme="b">
                 <label for="firstName">First name:</label>
                 <input type="text" name="firstName" id="firstName" placeholder="Ling's">
                 <label for="lastName">Last name:</label>
@@ -35,9 +35,9 @@
                 <label for="email">E-mail:</label>
                 <input type="email" name="email" id="email" placeholder="Your email..">
               </div>
-                <input type="submit" data-inline="true" class="submit" value="Submit">
+                <input type="submit" data-inline="true" class="ui-btn ui-btn-b" value="Submit">
 
-                <input type="reset" data-inline="true" class="reset" value="Reset">
+                <input type="reset" data-inline="true" class="ui-btn ui-btn-b" value="Reset">
               </div>
 
             </form>

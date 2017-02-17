@@ -5,22 +5,25 @@
 <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-<link rel="stylesheet" type="text/css" href="./css/carwash.css">
+<link rel="stylesheet" type="text/css" href="../css/carwash.css">
 </head>
 <body>
 
-<div data-role="payment">
-  <div data-role="main" class="ui-content">
-    <form method="post" action="demoform.asp">
+<div data-role="payment" data-theme="b">
+    <div data-role="header" data-theme="b">
+          <h1>Checkout</h1>
+    </div>
+  <div data-role="main" class="ui-content" data-theme="b">
+    <form method="post" action="demoform.asp" data-theme="b">
       <label for="cardNumber">Card Number:</label>
-      	<input type="number" name="cardNumber" id="cardNumber">
+      	<input type="number" data-mini="true" name="cardNumber" id="cardNumber">
       <label for="nameCard">Name on Card:</label>
-      	<input type="text" name="nameCard" id="nameCard">
+      	<input type="text" data-mini="true" name="nameCard" id="nameCard">
         <label for="address">Address:</label>
       	 <input type="address" name="address" id="address"> 
       
-        <label for="city" data-inline="true">City:</label>
-          <input type="address" name="city" id="city"> 
+        <label for="city">City:</label>
+          <input type="address" data-mini="true"name="city" id="city"> 
         <label for="state">State:</label>
           <input type="address" name="state" id="state"> 
         <label for="zip">Zip:</label>
@@ -71,7 +74,7 @@
         <label for="ccv">Card CCV:</label>
       	<input type="text" name="cvv" id="cvv" data-mini="true">
       	<!-- button for payment-->
-      <input type="submit" value="Confirm Payment" data-icon="check" data-iconpos="right" data-inline="true">
+      <input type="submit" class="ui-btn ui-btn-b" value="Confirm Payment" data-icon="check" data-iconpos="right" data-inline="true">
     </form>
   </div>
 </div>
@@ -79,5 +82,4 @@
 </body>
 </html>
 	
-
 

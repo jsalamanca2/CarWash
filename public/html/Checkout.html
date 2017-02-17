@@ -14,16 +14,16 @@
     <!-- Include the jQuery Mobile library -->
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <!-- linking to css -->
-    <link rel="stylesheet" type="text/css" href="./css/carwash.css">
+    <link rel="stylesheet" type="text/css" href="../css/carwash.css">
   </head>
   <body>
       <div data-role="checkout">
-        <div data-role="header">
+        <div data-role="header" data-theme="b">
           <h1>Checkout</h1>
         </div>
         <div data-role="main" class="ui-content">
             <form method="post" action="demoform.asp">
-              <div class="ui-field-contain">
+              <div class="ui-field-contain" data-theme="b">
               <table data-role="table" class="ui-responsive">
                 <thead>
                     <tr>
@@ -45,7 +45,7 @@
                   
                   <!-- checkout btn -->
                   
-                    <td colspan="5" class="checkout"><button id="submitbtn">Checkout Now!</button></td>
+                    <td colspan="5" ><button id="submitbtn" class="ui-btn ui-btn-a ui-corner-all">Checkout Now!</button></td>
                   
                 </tbody>
 
