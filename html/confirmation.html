@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car Wash App</title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- linking to css -->
+    <link rel="stylesheet" href="./css/carwash.css">
+  </head>
+  <body>
+
+      <div data-role="page">
+        <div data-role="header" data-theme="b">
+          <h1>Confirmation</h1>
+        </div>
+       
+
+            <div data-role="main" class="ui-content">
+              <form method="post" action="demoform.asp">
+                <table data-role="table" class="ui-responsive">
+                  <thead>
+                    <tr>
+                      <th>Name</th>
+                      <th>Car</th>
+                      <th>Confirmation #</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Juan</td>
+                      <td>Lexus</td>
+                      <td>111122929292</td>
+                    </tr>
+                </table>
+              </form>
+            </div>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=Example" style="float: center;">
+
+      </div>
+
+     
+  </body>
+</html>

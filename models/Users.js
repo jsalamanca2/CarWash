@@ -1,18 +1,17 @@
 module.exports = function(sequelize, DataTypes) {
-    return sequelize.define("User", {
+    var user = sequelize.define("User", {
       id: {
         type: DataTypes.INTEGER,
         allowNull: false,
         autoIncrement: true,
         primaryKey: true
-
       },
       username: {
         type: DataTypes.STRING,
         allowNull: false,
         validate: {
           len: [8, 20],
-          isAlphanumberic: true,
+          isAlphanumeric: true,
           notEmpty: true
         }
       },
@@ -48,20 +47,21 @@ module.exports = function(sequelize, DataTypes) {
       validate: {
         isAlpha: true,
         notEmpty: true
-      },
-      lastName: {
-        type: DataTypes.STRING,
-        allowNull: false,
-        validate: {
-          isAlpha: true,
-          notEmpty: true
         }
       },
-      isAdmin: {
-        type: DataTypes.BOOLEAN,
-        allowNull:false,
-        defaultValue: false
+    lastName: {
+      type: DataTypes.STRING,
+      allowNull: false,
+      validate: {
+        isAlpha: true,
+        notEmpty: true
       }
+    },
+    isAdmin: {
+      type: DataTypes.BOOLEAN,
+      allowNull: false,
+      defaultValue: false
     }
   })
-};
+ return user;  
+}

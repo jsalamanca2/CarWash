@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- linking to css -->
+    <link rel="stylesheet" type="text/css" href="../css/carwash.css">
+  </head>
+  <body>
+      <div data-role="checkout">
+        <div data-role="header" data-theme="b">
+          <h1>Checkout</h1>
+        </div>
+        <div data-role="main" class="ui-content">
+            <form method="post" action="demoform.asp">
+              <div class="ui-field-contain" data-theme="b">
+              <table data-role="table" class="ui-responsive">
+                <thead>
+                    <tr>
+                      <th class="second">Qty</th>
+                      <th class="third">Product</th>
+                      <th class="fourth">Total</th>
+                      <th class="fifth">&nbsp;</th>
+                    </tr>
+                  </thead>
+                <tbody>
+                  <!-- shopping cart contents -->
+                  <tr class="product">
+                   
+                    <td><input type="number" value="1" min="0" max="99" class="qtyinput"></td>
+                    <td>Full Service</td>
+                    <td>$64.99</td>
+                    
+                  </tr>    
+                  
+                  <!-- checkout btn -->
+                  
+                    <td colspan="5" ><button id="submitbtn" class="ui-btn ui-btn-a ui-corner-all">Checkout Now!</button></td>
+                  
+                </tbody>
+
+              </table>
+              </div>
+            </form>
+        </div>
+      </div>
+     
+
+  </body>
+</html>
