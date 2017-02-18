@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Car Wash App</title>
+    <!-- Include meta tag to ensure proper rendering and touch zooming -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Include jQuery Mobile stylesheets -->
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+
+    <!-- Include the jQuery library -->
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Include the jQuery Mobile library -->
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <!-- linking to css -->
+    <link rel="stylesheet" href="./css/carwash.css">
+  </head>
+  <body>
+
+      <div data-role="page">
+        <div data-role="header" data-theme="b">
+          <h1>Car Details</h1>
+        </div>
+       
+
+              <div data-role="main" class="ui-content">
+              <form method="post" action="demoform.asp">
+                <fieldset class="ui-field-contain">
+                 <label for="make">Make</label>
+                  <select name="make" id="make">
+                    <option value="dodge">Dodge</option>
+                    <option value="kia">Kia</option>
+                    <option value="ford">Ford</option>
+                    <option value="gmc">GMC</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="mitsubishi">Mitsubishi</option>
+                    <option value="chevy">Chevy</option>
+                    <option value="cadillac">Cadillac</option>
+                    <option value="bmw">BMW</option>
+                    <option value="audi">Audi</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="acura">Acura</option>
+                    <option value="saturn">Saturn?</option>
+
+
+                  </select>
+
+
+                  <label for="model">Type</label>
+                  <select name="model" id="model">
+                    <option value="car">Car</option>
+                    <option value="truck">Truck</option>
+                    <option value="vans">Vans</option>
+                    <option value="suv">SUV</option>
+
+                  </select>
+
+                  <label for="year">Year</label>
+                  <select name="year" id="year">
+                    <option value="1">2017</option>
+                    <option value="2">2016</option>
+                    <option value="3">2015</option>
+                    <option value="4">2014</option>
+                    <option value="5">2013</option>
+                    <option value="6">2012</option>
+                    <option value="7">2011</option>
+                    <option value="8">2010</option>
+                    <option value="9">2009</option>
+                    <option value="10">2008</option>
+                    <option value="11">2007</option>
+                    <option value="12">2006</option>
+                    <option value="13">2005</option>
+                    <option value="14">2004</option>
+                    <option value="15">2003</option>
+                    <option value="16">2002</option>
+                    <option value="17">2001</option>
+                    <option value="18">2000</option>
+                    <option value="19">1999</option>
+                    <option value="20">1998</option>
+                    <option value="21">1997</option>
+                    <option value="22">1996</option>
+                    <option value="23">1995</option>
+                    <option value="24">1994</option>
+                    <option value="25">1993</option>
+                    <option value="26">1992</option>
+                    <option value="27">1991</option>
+                    <option value="28">1990</option>
+                    <option value="29">GET A NEW CAR</option>
+                   
+
+                  </select>
+                </fieldset>
+                <input type="submit" data-inline="true" value="Submit" class="ui btn-b">
+              </form>
+            </div>
+          </div>
+
+        
+
+
+       
+
+     
+  </body>
+</html>

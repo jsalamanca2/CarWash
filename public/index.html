@@ -1,223 +1,118 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Car Wash App</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- linking to css -->
-    <link rel="stylesheet" href="./css/carwash.css">
-    <link rel="stylesheet" href="./css/app.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>My App</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="css/framework7.ios.min.css">
+    <link rel="stylesheet" href="css/framework7.ios.colors.min.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/my-app.css">
   </head>
-
   <body>
-  <!-- Main page or introduction screen  -->
-    <div class="app-page" data-page="home">
-      <div class="app-topbar">
-        <div class="app-title">Car Wash!!!!</div>
-      </div>
-      <div class="app-content">
-        <div class="app-section">
-          <div>
-            <!-- add code here for the page  -->
-            <img src="http://placehold.it/350x150">
-          </div>
-          <br>
-            <div>
-            <!-- add code here for the page  -->
-            <img src="http://placehold.it/350x150">
-          </div>
-          <br>
-          <div>
-            <!-- add code here for the page  -->
-            <img src="http://placehold.it/350x150">
-          </div>
+    <!-- Status bar overlay for fullscreen mode-->
+    <div class="statusbar-overlay"></div>
+    <!-- Panels overlay-->
+    <div class="panel-overlay"></div>
+    <!-- Left panel with reveal effect-->
+    <div class="panel panel-left panel-reveal">
+      <div class="content-block">
+        <div class="content-block-title">Welcome Kody</div>
+        <div class="list-block">
+          <ul>
+            <li><a href="about.html" class="item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">About</div>
+                </div>
+              </div></a></li>
+            <li><a href="services.html" class="item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Services</div>
+                </div>
+              </div></a></li>
+            <!--<li><a href="index.html" class="item-link">-->
+              <!--<div class="item-content">-->
+                <!--<div class="item-inner">-->
+                  <!--<div class="item-title">testing</div>-->
+                <!--</div>-->
+              <!--</div></a></li>-->
+            <li><a href="form.html" class="item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Login</div>
+                </div>
+              </div></a></li>
+            <li><a href="contact.html" class="item-link">
+              <div class="item-content">
+                <div class="item-inner">
+                  <div class="item-title">Contact Us</div>
+                </div>
+              </div></a></li>
+          </ul>
         </div>
-          <button type="button" class=" app-button btn btn-primary btn-lg btn-block" data-target="page2">Enter</button>
       </div>
     </div>
-    <!--  -->
-    <div class="app-page" data-page="page2">
-      <div class="app-topbar">
-        <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Cars</div>
-      </div>
-      <div class="app-content">
-        <div class="app-section">
-          <h3>Enter Car Information</h3>
-        </div>
-        <div class="app-section">
-          <div>
-            <!-- dummy Data -->
-            <form>
-                Year:<br>
-                <input type="text" name="Year"><br>
-                Make:<br>
-                <input type="text" name="Make"></br>
-                Model:<br>
-                <input type="text" name="Model"><br>
-                Color:<br>
-                <input type="text" name="Color">
-            </form>
-          </div>
-        </div>
-           <button type="button" class=" app-button btn btn-primary btn-lg btn-block" data-target="page3">Submit</button>
+    <!-- Right panel with cover effect-->
+    <div class="panel panel-right panel-cover">
+      <div class="content-block">
+        <p>Right panel content goes here</p>
       </div>
     </div>
-    <!-- page 3 -->
-    <div class="app-page" data-page="page3">
-      <div class="app-topbar">
-      <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Your Garage</div>
-      </div>
-      <!-- this could be pouplated using a Ajax call to the data base or store the cars using local storage  -->
-      <div class="app-content">
-        <div class="app-section">
-          <button class="btn btn-default glyphicon glyphicon-plus" type="submit" ></button>
-        </div>
-        <div class="app-section">
-        <!-- button that should add cars / redirect the user to the add car screen  -->
-          <button class="btn btn-default glyphicon glyphicon-plus" type="submit" ></button>
-        </div>
-        <div class="app-section">
-        <!-- button that should add cars / redirect the user to the add car screen  -->
-          <button class="btn btn-default glyphicon glyphicon-plus" type="submit" ></button>
-
-        </div>
-        <button type="button" class=" app-button btn btn-primary btn-lg btn-block" data-target="page4">Select Services</button>
-      </div>
-    </div>
-    <!-- page 4 the services page  -->
-    <!-- Services are coming from the backend or server Questionable  -->
-    <div class="app-page" data-page="page4">
-      <div class="app-topbar">
-      <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Services</div>
-      </div>
-      <div class="app-content">
-        <div class="app-section">
-          <div>
-            <li>wash</li>
-            <li>wax</li>
-            <li>windows</li>
-            <li>tires</li>
-            <li>interior Clean</li>
+    <!-- Views-->
+    <div class="views layout-dark theme-red">
+      <!-- Your main view, should have "view-main" class-->
+      <div class="view view-main">
+        <!-- Top Navbar-->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <!-- We have home navbar without left link-->
+            <div class="center sliding">Ultimate Car Wash</div>
+            <div class="right">
+              <!-- Right link contains only icon - additional "icon-only" class--><a href="#" class="link icon-only open-panel"> <i class="icon icon-bars"></i></a>
+            </div>
           </div>
         </div>
-        <div class="app-section">
-          <div>
-            <li>wash</li>
-            <li>wax</li>
-            <li>windows</li>
-            <li>tires</li>
-            <li>interior Clean</li>
-          </div>
+        <!-- Pages, because we need fixed-through navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-through toolbar-through">
+          <!-- Page, data-page contains page name-->
+          <!--edit me please all the time. -->
+          <!------------------------------------------------------>
+            <div data-page="index" class="page">
+                <div class="page-content">
+                    <div class="content-block">
+                         <!-- add something here -->
+                        <div class="content-block">
+                            <div class="content-block-inner">
+                                <iframe src="//giphy.com/embed/qHAhWY4juIRJC" width="315" height="221" frameBorder="2" class="giphy-embed" allowFullScreen></iframe>
+                                <p><a href="http://giphy.com/gifs/cars-audi-car-wash-qHAhWY4juIRJC"></a></p>
+                                <div id="map"></div>
+                            </div>
+                            <div>
+                                <a href="services.html" class="button button-big color-red">Let's Get Washing</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!--edit this all the time -->
         </div>
-          <button type="button" class=" app-button btn btn-primary btn-lg btn-block" data-target="page5">Submit</button>
-      </div>
-    </div>
-    <!-- page 5  or login page -->
-    <div class="app-page" data-page="page5">
-      <div class="app-topbar">
-      <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Page5</div>
-      </div>
-      <div class="app-content">
-        <div class="app-section">
-
-          </div>
-        <div class="app-section">
-          <div class="app-button" data-target="page6">Go to Page 6</div>
-        </div>
-      </div>
-    </div>
-    <!-- page 6 -->
-    <div class="app-page" data-page="page6">
-      <div class="app-topbar">
-      <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Page6</div>
-      </div>
-      <div class="app-content">
-        <div class="app-section">
-          <div class="app-button" data-target="page7">Go to Page 7</div>
+        <!-------------------------------------------------->
+        <!-- Bottom Toolbar-->
+        <div class="toolbar toolbar-hidden">
+          <div class="toolbar-inner"><a href="#" class="link">Link 1</a><a href="#" class="link">Link 2</a></div>
         </div>
       </div>
     </div>
-    <!-- page 7 -->
-    <div class="app-page" data-page="page7">
-      <div class="app-topbar">
-      <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Page7</div>
-      </div>
-      <div class="app-content">
-        <div class="app-section">
-          <div class="app-button" data-target="page8">Go to Page 8</div>
-        </div>
-      </div>
-    </div>
-    <!-- page 8 -->
-    <div class="app-page" data-page="page8">
-      <div class="app-topbar">
-      <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Page8</div>
-      </div>
-      <div class="app-content">
-        <div class="app-section">
-          <div class="app-button" data-target="page9">Go to Page 9</div>
-        </div>
-      </div>
-    </div>
-    <!-- page 9 -->
-    <div class="app-page" data-page="page9">
-      <div class="app-topbar">
-      <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Page9</div>
-      </div>
-      <div class="app-content">
-        <div class="app-section">
-          <div class="app-button" data-target="page10">Go to Page 10</div>
-        </div>
-      </div>
-    </div>
-    <!-- page 10 -->
-    <div class="app-page" data-page="page10">
-      <div class="app-topbar">
-      <div class="app-button left" data-back data-autotitle></div>
-        <div class="app-title">Page10</div>
-      </div>
-      <div class="app-content">
-        <div class="app-section">
-          <div class="app-button" data-target="page11">Go to Page 11</div>
-        </div>
-      </div>
-    </div>
-
-    <script src="./js/zepto.js"></script>
-    <script src="./js/app.min.js"></script>
-    <script>
-      App.controller('home', function (page) {
-        // put stuff here
-      });
-
-      App.controller('page3', function (page) {
-        // put stuff here
-      });
-      App.controller('page4', function (page) {
-        // put stuff here
-      });
-      App.controller('page5', function (page) {
-        // put stuff here
-      });
-
-      try {
-        App.restore();
-      } catch (err) {
-        App.load('home');
-      }
-    </script>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/my-app.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCERMPxz57sQgruANe8MAczqNFsOuYkeqE&callback=initMap"
+            async defer></script>
   </body>
 </html>
